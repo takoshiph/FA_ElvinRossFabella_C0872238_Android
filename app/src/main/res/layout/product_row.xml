@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTitleRow"
+        android:text="Product Name: "
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionTitleRow"
+        android:layout_marginTop="10dp"
+        android:text="Product Description:"
+        android:layout_below="@id/nameTitleRow"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEditRow"
+        android:text="Name Label"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/nameTitleRow"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description Label"
+        android:id="@+id/descriptionEditRow"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/descriptionTitleRow"
+        android:layout_below="@id/nameEditRow"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>
+
